@@ -5,10 +5,14 @@ The purpose of this file is to record the steps and procedure that I took for cr
 These notes are something new I learnt along the way of installing the linux. It may be new concept, keywords, commands or even new language syntax
 
 ### Shell Redirection
-refer:[https://askubuntu.com/questions/514748/what-does-dev-null-mean-in-a-shell-script] 2nd answer
+It started with this command `bzip2 --version 2>&1 </dev/null`
+For detailed description of the redirection operator, refer:[https://askubuntu.com/questions/514748/what-does-dev-null-mean-in-a-shell-script] 2nd answer
 `cat /dev/null > <file_name>` Normally the above command doesnt work in _bash_ or _csh_
 `>| <file_name>` In _bash_ this command removes the contents of the file
-`cat /dev/null >| <file_name>` in _csh_ or _zsh_ 
+`cat /dev/null >| <file_name>` in _csh_ or _zsh_
+For detailed description of
+`2>&1` refer:[https://stackoverflow.com/questions/10508843/what-is-dev-null-21] 3rd answer.
+It says that redirect the STDERR output to STDIN output.   
 
 ## Links
 
